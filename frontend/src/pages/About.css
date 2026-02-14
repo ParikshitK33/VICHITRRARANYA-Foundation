@@ -1,0 +1,373 @@
+/* About Hero Section */
+
+.about-hero {
+    background: linear-gradient(135deg, #1b5e20, #2e7d32, #4caf50);
+    color: white;
+    padding: 25px 0 150px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+.hero-wave svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    fill: white;
+}
+
+.hero-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-logo-main {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-logo-sub {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0.95;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Section Header */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #2e7d32;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #2e7d32, #4caf50);
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-top: 15px;
+}
+
+
+/* Who We Are Section - CENTERED */
+
+.who-we-are-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.who-we-are-content-centered {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.highlight-text-centered {
+    font-size: 20px;
+    color: #2e7d32;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.normal-text-centered {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* What We Believe Section */
+
+.what-we-believe-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.beliefs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.belief-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.belief-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.belief-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: all 0.3s ease;
+}
+
+.belief-card:hover .belief-icon-wrapper {
+    transform: scale(1.1);
+}
+
+.belief-icon {
+    font-size: 40px;
+}
+
+.belief-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.belief-description {
+    color: #666;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+/* Mission Vision Values Section */
+
+.mv-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.mv-card {
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mv-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.mv-card.mission {
+    background: linear-gradient(135deg, #e8f5e9, white);
+    border-top: 4px solid #2e7d32;
+}
+
+.mv-card.vision {
+    background: linear-gradient(135deg, #e3f2fd, white);
+    border-top: 4px solid #1976d2;
+}
+
+.mv-card.values {
+    background: linear-gradient(135deg, #fce4ec, white);
+    border-top: 4px solid #c2185b;
+}
+
+.mv-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.mv-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.mv-card.mission h3 {
+    color: #2e7d32;
+}
+
+.mv-card.vision h3 {
+    color: #1976d2;
+}
+
+.mv-card.values h3 {
+    color: #c2185b;
+}
+
+.mv-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* Container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+    .beliefs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mv-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-hero {
+        padding: 100px 0 120px;
+        min-height: 500px;
+    }
+    .hero-logo-main {
+        font-size: 42px;
+    }
+    .hero-logo-sub {
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
+    .about-hero h1 {
+        font-size: 36px;
+    }
+    .about-hero p {
+        font-size: 16px;
+    }
+    .section-title {
+        font-size: 30px;
+    }
+    .highlight-text-centered {
+        font-size: 18px;
+    }
+    .beliefs-grid {
+        grid-template-columns: 1fr;
+    }
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-hero {
+        padding: 80px 0 100px;
+        min-height: 400px;
+    }
+    .hero-logo-main {
+        font-size: 36px;
+    }
+    .hero-logo-sub {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+    .about-hero h1 {
+        font-size: 30px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .highlight-text-centered {
+        font-size: 17px;
+        padding: 0 15px;
+    }
+    .normal-text-centered {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+    .belief-icon-wrapper {
+        width: 70px;
+        height: 70px;
+    }
+    .belief-icon {
+        font-size: 35px;
+    }
+    .belief-title {
+        font-size: 22px;
+    }
+}

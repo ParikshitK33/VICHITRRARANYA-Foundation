@@ -1,0 +1,253 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 3rem 0 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 1.5fr 2fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Logo Section */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+    margin-bottom: 1.25rem;
+}
+
+.footer-logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.footer-logo-main {
+    color: #4caf50;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-logo-sub {
+    color: #999;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 2px;
+}
+
+.footer-description {
+    color: #999;
+    line-height: 1.7;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* Footer Sections */
+
+.footer-section h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    /* REMOVED the green line styles */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 15px;
+}
+
+.footer-section ul li a:hover {
+    color: #4caf50;
+}
+
+
+/* Contact Info */
+
+.contact-info-list li {
+    margin-bottom: 10px;
+}
+
+.contact-info-list li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-info-list li a:hover {
+    color: #4caf50;
+}
+
+
+/* Follow Us and Donate Section - Side by Side */
+
+.follow-donate-section {
+    padding: 0;
+}
+
+.follow-donate-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.follow-section {
+    flex: 1;
+}
+
+.donate-section {
+    flex: 1;
+    text-align: right;
+}
+
+.follow-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.follow-list li {
+    margin-bottom: 10px;
+}
+
+.follow-list li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.follow-list li a:hover {
+    color: #4caf50;
+}
+
+
+/* Donate Button */
+
+.btn-donate {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #4caf50;
+    white-space: nowrap;
+}
+
+.btn-donate:hover {
+    background-color: transparent;
+    color: #4caf50;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.footer-bottom p {
+    color: #999;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* Container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .follow-donate-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .donate-section {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .footer-section {
+        text-align: center;
+    }
+    .footer-logo {
+        justify-content: center;
+    }
+    /* REMOVED the green line centering styles */
+    .follow-donate-wrapper {
+        flex-direction: row;
+        text-align: left;
+    }
+    .follow-section,
+    .donate-section {
+        text-align: center;
+    }
+    .btn-donate {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .follow-donate-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .follow-section,
+    .donate-section {
+        text-align: center;
+    }
+}
